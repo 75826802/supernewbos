@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS基于模块化的MVC</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+	</head>
+	<!-- ng-app是angular编程入口,是模块作用域  -->
+	<body>
+		<div ng-app="myapp" ng-controller="myctrl">
+			<div>
+				<input type="text" name="name" ng-model="name" />
+			</div>
+			<div>
+				hello,{{name}}
+			</div>
+		</div>
+			<script type="text/javascript">
+				var myapp = angular.module("myapp",[]);
+				
+				myapp.controller("myctrl",["$scope",function($scope){
+					$scope.name = "黑马程序员";
+				}]);
+			</script>
+		</div>
+	</body>
+</html>
