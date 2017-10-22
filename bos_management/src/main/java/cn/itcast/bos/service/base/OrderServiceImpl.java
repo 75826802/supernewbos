@@ -44,6 +44,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private AreaRepository areaRepository;
+	
 
 	@Autowired
 	private WorkBillRepository workBillRepository;
