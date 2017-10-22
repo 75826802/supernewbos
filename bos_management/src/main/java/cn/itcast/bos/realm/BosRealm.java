@@ -23,6 +23,7 @@ import cn.itcast.bos.service.base.RoleService;
 import cn.itcast.bos.service.base.UserService;
 
 public class BosRealm extends AuthorizingRealm {
+	
 	@Autowired
 	private UserService userService;
 	@Autowired

@@ -6,5 +6,6 @@ import cn.itcast.bos.domain.take_delivery.WayBill;
 
 public interface WayBillIndexRepository extends ElasticsearchRepository<WayBill,Integer> {
 
+	
 
 }
